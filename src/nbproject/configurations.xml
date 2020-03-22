@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>decomp.h</itemPath>
+      <itemPath>file_io.h</itemPath>
+      <itemPath>gmobj.h</itemPath>
+      <itemPath>mesh.h</itemPath>
+      <itemPath>view.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>mcd-ref-merge.qrc</itemPath>
+      <itemPath>mcd-ref-merge.ui</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>decomp.cpp</itemPath>
+      <itemPath>file_io.cpp</itemPath>
+      <itemPath>gmobj.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>mesh.cpp</itemPath>
+      <itemPath>view.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <ccTool>
+          <standard>11</standard>
+          <incDir>
+            <pElem>/usr/include/jsoncpp</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ENABLE_VIEW</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lboost_program_options</linkerOptionItem>
+            <linkerOptionItem>-lCGAL</linkerOptionItem>
+            <linkerOptionItem>-lCGAL_Core</linkerOptionItem>
+            <linkerOptionItem>-lCGAL_Qt5</linkerOptionItem>
+            <linkerOptionItem>-ljsoncpp</linkerOptionItem>
+            <linkerOptionItem>-ltriangle</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="decomp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="decomp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="file_io.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="file_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gmobj.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gmobj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mcd-ref-merge.qrc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mcd-ref-merge.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mesh.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mesh.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="view.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="view.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>11</standard>
+          <incDir>
+            <pElem>/usr/include/jsoncpp</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ANSI_DECLARATORS</Elem>
+            <Elem>ENABLE_VIEW</Elem>
+            <Elem>NDEBUG</Elem>
+            <Elem>TRILIBRARY</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lboost_program_options</linkerOptionItem>
+            <linkerOptionItem>-lCGAL</linkerOptionItem>
+            <linkerOptionItem>-lCGAL_Core</linkerOptionItem>
+            <linkerOptionItem>-lCGAL_Qt5</linkerOptionItem>
+            <linkerOptionItem>-ljsoncpp</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="decomp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="decomp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="file_io.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="file_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gmobj.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gmobj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mcd-ref-merge.qrc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mcd-ref-merge.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mesh.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mesh.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="view.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="view.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
