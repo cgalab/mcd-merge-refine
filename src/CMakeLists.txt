@@ -21,17 +21,17 @@ set(UIS mcd-ref-merge.ui)
 set(RESOURCES mcd-ref-merge.qrc)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-add_executable(mcd-ref-merge ${SOURCES} ${UIS} ${RESOURCES})
+add_executable(mcd-merge-refine ${SOURCES} ${UIS} ${RESOURCES})
 
-set_target_properties(mcd-ref-merge PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+set_target_properties(mcd-merge-refine PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 
-target_link_libraries(mcd-ref-merge Boost::program_options)
-target_link_libraries(mcd-ref-merge jsoncpp)
-target_link_libraries(mcd-ref-merge triangle)
+target_link_libraries(mcd-merge-refine Boost::program_options)
+target_link_libraries(mcd-merge-refine jsoncpp)
+target_link_libraries(mcd-merge-refine triangle)
 
 if(BUILD_VIEW)
-    target_link_libraries(mcd-ref-merge CGAL::CGAL CGAL::CGAL_Core CGAL::CGAL_Qt5)
-    target_link_libraries(mcd-ref-merge Qt5::Core Qt5::Gui Qt5::Widgets Qt5::OpenGL Qt5::Svg)
+    target_link_libraries(mcd-merge-refine CGAL::CGAL CGAL::CGAL_Core CGAL::CGAL_Qt5)
+    target_link_libraries(mcd-merge-refine Qt5::Core Qt5::Gui Qt5::Widgets Qt5::OpenGL Qt5::Svg)
 endif(BUILD_VIEW)
 
 add_custom_command(
