@@ -1,7 +1,7 @@
 # Convex Decomposition Refinement
 
 ## Command Line Options
-`mcd-ref-merge` currently supports the following command line options:
+`mcd-merge-refine` currently supports the following command line options:
 ~~~~
 --help ... produce help message
 --input <file> ... specify the input file (JSON or PTS)
